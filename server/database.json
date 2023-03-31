@@ -1,0 +1,43 @@
+{
+  "posts": [
+    {
+      "userName": "aceven",
+      "firstName": "Acer ",
+      "lastName": "Ventura",
+      "email": "aceven@gmail.com",
+      "password": "123456",
+      "id": 1
+    },
+    {
+      "userName": "uche1",
+      "firstName": "Uche",
+      "lastName": "Oranye",
+      "email": "uche@gmail.com",
+      "password": "123456",
+      "id": 2
+    },
+    {
+      "username": "aceven",
+      "password": "123456",
+      "id": 3
+    },
+    {
+      "userName": "man",
+      "firstName": "Man ",
+      "lastName": "OfGod",
+      "email": "man@gmail.com",
+      "password": "123456",
+      "id": 4
+    },
+    {
+      "username": "man",
+      "password": "123456",
+      "id": 5
+    },
+    {
+      "username": "man",
+      "password": "123456",
+      "id": 6
+    }
+  ]
+}

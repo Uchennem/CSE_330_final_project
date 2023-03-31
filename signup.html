@@ -10,27 +10,32 @@
 <!-- partial:index.partial.html -->
 <div id="bg"></div>
 
-<form action="https://example.com/submit-form" method="post">
+<form action="http://localhost:3000/post" method="POST" id="signup-form">
+  <div style="width: 500px; margin-left:-20px"><h1 style="color:aliceblue;">Please enter your information</h1></div>
   <div class="form-field">
-    <input type="text" id="fname" placeholder="First Name" required/>
+    <input type="text" name="uname" placeholder="User name" id="uname" required/>
   </div>
 
   <div class="form-field">
-    <input type="text" id="lname" placeholder="Last Name"/>
+    <input type="text" name="fname" placeholder="First Name" id="fname" required/>
+  </div>
+
+  <div class="form-field">
+    <input type="text" name="lname" id="lname" placeholder="Last Name"/>
   </div>
   <div class="form-field">
-    <input type="email" placeholder="Email/Username" required/>
+    <input id="email" type="email" name="email" placeholder="Email/Username" required/>
   </div>
   
   <div class="form-field">
-    <input type="password" placeholder="Password" required/>                         </div>
+    <input id="password" type="password" name="password" placeholder="Password" required/>                         </div>
   
   <div class="form-field">
     <button class="btn" type="submit">Create Account</button>
   </div>
-
 </form>
 <!-- partial -->
   
 </body>
+<script src="/js/sign_up.js"></script>
 </html>

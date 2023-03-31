@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Notes Home</title>
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+  <div id="bg"></div>
+
+    <h1 id="welcome">Welcome to Smart Notes</h1>
+
+    <form id="login_form">
+      <div class="form-field">
+        <input type="text" placeholder="Username" id="username_input" required />
+      </div>
+
+      <div class="form-field">
+        <input type="password" placeholder="Password" id="password_input" required />
+      </div>
+
+      <div class="form-field">
+        <button class="btn" id="login_btn" type="submit">Log in</button>
+        <div class="sign_up_alt">
+          <p class="no_account">Don't have an account? <br>signup</p>
+          <a href="signup.html" class="btn" id="sign_up">Sign Up</a>
+        </div>
+      </div>
+    </form>
+
+  <script src="/js/login.js"></script>
+</body>
+</html>
