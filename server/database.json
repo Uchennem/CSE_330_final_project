@@ -38,6 +38,11 @@
       "username": "man",
       "password": "123456",
       "id": 6
+    },
+    {
+      "username": "uche1",
+      "password": "123456",
+      "id": 7
     }
   ]
 }
