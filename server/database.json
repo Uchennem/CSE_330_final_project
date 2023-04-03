@@ -1,18 +1,15 @@
 {
-  "posts": [
+  "users": [
     {
       "userName": "aceven",
-      "firstName": "Acer ",
-      "lastName": "Ventura",
-      "email": "aceven@gmail.com",
+      "firstName": "Ace",
+      "lastName": "Vwn",
+      "email": "asda@gmail.com",
       "password": "123456",
       "id": 1
     },
     {
-      "userName": "uche1",
-      "firstName": "Uche",
-      "lastName": "Oranye",
-      "email": "uche@gmail.com",
+      "username": "aceven",
       "password": "123456",
       "id": 2
     },
@@ -20,24 +17,21 @@
       "username": "aceven",
       "password": "123456",
       "id": 3
-    },
-    {
-      "userName": "man",
-      "firstName": "Man ",
-      "lastName": "OfGod",
-      "email": "man@gmail.com",
-      "password": "123456",
-      "id": 4
-    },
-    {
-      "username": "man",
-      "password": "123456",
-      "id": 5
-    },
-    {
-      "username": "man",
-      "password": "123456",
-      "id": 6
     }
-  ]
+  ],
+  "notes": [
+    {
+      "title": "First note",
+      "content": "This is something i wrote",
+      "userId": "1",
+      "id": 1
+    },
+    {
+      "title": "Second Note",
+      "content": "This is the second note",
+      "userId": "1",
+      "id": 2
+    }
+  ],
+  "posts": []
 }

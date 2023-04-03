@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
       const jsonData = JSON.stringify(inputData);
 
-      fetch('http://localhost:3000/posts', {
+      fetch('http://localhost:3000/users', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
