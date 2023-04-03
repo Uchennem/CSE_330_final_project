@@ -14,9 +14,27 @@
       "id": 2
     },
     {
-      "username": "aceven",
+      "userName": "man",
+      "firstName": "Man ",
+      "lastName": "OfGod",
+      "email": "man@gmail.com",
       "password": "123456",
-      "id": 3
+      "id": 4
+    },
+    {
+      "username": "man",
+      "password": "123456",
+      "id": 5
+    },
+    {
+      "username": "man",
+      "password": "123456",
+      "id": 6
+    },
+    {
+      "username": "uche1",
+      "password": "123456",
+      "id": 7
     }
   ],
   "notes": [
