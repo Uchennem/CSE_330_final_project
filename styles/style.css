@@ -114,7 +114,7 @@ form .btn {
   background-repeat: no-repeat;
 }
 
-#create_note, #all_notes {
+#create_note, #all_notes, #all_notes_btn {
   outline: none;
   border: none;
   cursor: pointer;
