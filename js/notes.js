@@ -1,8 +1,11 @@
+
+const user_id = sessionStorage.getItem('userId')
+
 document.addEventListener("DOMContentLoaded", () => {
     // Get user's first name from JSON server
     const getUser = async () => {
       try {
-        const response = await fetch('http://localhost:3000/users/1');
+        const response = await fetch(`http://localhost:3000/users/${user_id}`);
         const user = await response.json();
         const firstName = user.firstName;
   
@@ -35,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
           const content = document.getElementById("note_content").value;
   
           try {
-            const response = await fetch(`http://localhost:3000/users/1/notes`, {
+            const response = await fetch(`http://localhost:3000/users/${user_id}/notes`, {
               method: "POST",
               headers: {
                 "Content-Type": "application/json"
@@ -69,17 +72,17 @@ document.addEventListener("DOMContentLoaded", () => {
   
     const loadNotes = async (notesList) => {
       try {
-        const response = await fetch('http://localhost:3000/users/1/notes');
+        const response = await fetch(`http://localhost:3000/users/${user_id}/notes`);
         const notes = await response.json();
         
         // Display notes as links
-        notes.forEach(note => {
-          const noteLink = document.createElement('a');
-          noteLink.textContent = note.title;
-          noteLink.href = `./note.html?id=${note.id}`;
-          notesList.appendChild(noteLink);
-          notesList.appendChild(document.createElement('br'));
-        });
+        // notes.forEach(note => {
+        //   const noteLink = document.createElement('a');
+        //   noteLink.textContent = note.title;
+        //   noteLink.href = `./note.html?id=${note.id}`;
+        //   notesList.appendChild(noteLink);
+        //   notesList.appendChild(document.createElement('br'));
+        // });
         
       } catch (error) {
         console.error("Error loading notes:", error);

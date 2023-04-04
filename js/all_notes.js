@@ -1,6 +1,7 @@
 const noteTableBody = document.getElementById("note_table_body");
+const user_id = sessionStorage.getItem('userId')
 
-fetch("http://localhost:3000/users/1/notes")
+fetch(`http://localhost:3000/users/${user_id}/notes`)
   .then(response => response.json())
   .then(notes => {
     notes.forEach(note => {
@@ -20,8 +21,8 @@ fetch("http://localhost:3000/users/1/notes")
         const newTitle = prompt("Enter new title:", note.title);
         const newContent = prompt("Enter new content:", note.content);
         if (newTitle !== null || newContent !== null) {
-          fetch(`http://localhost:3000/users/1/notes/${note.id}`, {
-            method: "PUT",
+          fetch(`http://localhost:3000/notes/${note.id}`, {
+            method: "PATCH",
             headers: {
               "Content-Type": "application/json"
             },
@@ -39,7 +40,7 @@ fetch("http://localhost:3000/users/1/notes")
 
       // Add click event listener to delete button
       deleteBtn.addEventListener("click", () => {
-        fetch(`http://localhost:3000/users/1/notes/${note.id}`, {
+        fetch(`http://localhost:3000/notes/${note.id}`, {
           method: "DELETE"
         })
         .then(() => {

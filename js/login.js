@@ -7,22 +7,22 @@ loginForm.addEventListener("submit", async (event) => {
 
   try {
     const response = await fetch("http://localhost:3000/users", {
-      method: "POST",
+      method: "GET",
       headers: {
         "Content-Type": "application/json"
       },
-      body: JSON.stringify({
-        username: username,
-        password: password
-      })
     });
     const data = await response.json();
 
-    if (response.ok) {
+    const user = data.find((user) => user.userName === username && user.password === password);
+
+    if (user) {
+      console.log(user)
+      sessionStorage.setItem('userId', user.id)
       // Redirect to Smart Notes List page
-      window.location.href = "http://localhost:5500/notes_list.html";
+      window.location.href = "http://localhost:5500/create_notes.html";
     } else {
-      alert(data.message);
+      alert("Incorrect username or password");
     }
   } catch (error) {
     console.error("Error fetching user data:", error);

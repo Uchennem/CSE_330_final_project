@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Notes List</title>
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+  <div id="bg"></div>
+
+  <h1 id="welcome">Welcome to Smart Notes</h1>
+
+  <button id="all_notes_btn">All notes</button>
+  <button id="logout_btn">Logout</button>
+
+  <div id="notes_list"></div>
+
+  <form id="note_form">
+    <input type="text" id="note_title" placeholder="Title" required>
+    <textarea id="note_content" placeholder="Content"></textarea>
+    <button type="submit">Add Note</button>
+  </form>
+
+  <script src="/js/notes.js"></script>
+</body>
+</html>

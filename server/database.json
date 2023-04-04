@@ -1,55 +1,86 @@
 {
   "users": [
     {
-      "userName": "aceven",
-      "firstName": "Ace",
-      "lastName": "Vwn",
-      "email": "asda@gmail.com",
-      "password": "123456",
+      "userName": "mainuser",
+      "firstName": "Main",
+      "lastName": "User",
+      "email": "main@gmail.com",
+      "password": "qwert",
       "id": 1
     },
     {
-      "username": "aceven",
-      "password": "123456",
+      "userName": "seconduser",
+      "firstName": "Second",
+      "lastName": "User",
+      "email": "secon@gmail.com",
+      "password": "yuiop",
       "id": 2
     },
     {
-      "userName": "man",
-      "firstName": "Man ",
-      "lastName": "OfGod",
-      "email": "man@gmail.com",
-      "password": "123456",
-      "id": 4
-    },
-    {
-      "username": "man",
-      "password": "123456",
-      "id": 5
-    },
-    {
-      "username": "man",
-      "password": "123456",
-      "id": 6
-    },
-    {
-      "username": "uche1",
-      "password": "123456",
-      "id": 7
+      "userName": "starboy",
+      "firstName": "Wizkid",
+      "lastName": "Dayo",
+      "email": "wizday@gmail.com",
+      "password": "wizzybaby1",
+      "id": 3
     }
   ],
   "notes": [
     {
-      "title": "First note",
-      "content": "This is something i wrote",
+      "title": "Tree",
+      "content": "Big Tree",
       "userId": "1",
       "id": 1
     },
     {
-      "title": "Second Note",
-      "content": "This is the second note",
+      "title": "ADde",
+      "content": "djgcjhbecd",
       "userId": "1",
       "id": 2
+    },
+    {
+      "title": "gjykjesh",
+      "content": "reyvgyre",
+      "userId": "1",
+      "id": 3
+    },
+    {
+      "title": "h2xgfyeg",
+      "content": "3rfygicy3uf",
+      "userId": "1",
+      "id": 4
+    },
+    {
+      "title": "mdfvgjhg",
+      "content": "efvyig uwyevg",
+      "userId": "1",
+      "id": 5
+    },
+    {
+      "title": "kkkkk",
+      "content": "dfsfsdfsdfsdf",
+      "userId": "1",
+      "id": 6
+    },
+    {
+      "title": "meaning",
+      "content": "666",
+      "userId": 3,
+      "id": 8
+    },
+    {
+      "title": "My first Notes",
+      "content": "This is a love song music!",
+      "userId": 3,
+      "id": 9
+    },
+    {
+      "title": "Another note",
+      "content": "dsomejuyus",
+      "userId": 3,
+      "id": 11
     }
   ],
-  "posts": []
+  "posts": [],
+  "login": []
 }
