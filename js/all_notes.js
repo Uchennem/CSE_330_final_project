@@ -1,13 +1,14 @@
 const noteTableBody = document.getElementById("note_table_body");
 const user_id = sessionStorage.getItem('userId')
+const Card = document.getElementById("cards");
 
 fetch(`http://localhost:3000/users/${user_id}/notes`)
   .then(response => response.json())
   .then(notes => {
     notes.forEach(note => {
-      const newRow = document.createElement("tr");
-      const titleCol = document.createElement("td");
-      const contentCol = document.createElement("td");
+      const newSection = document.createElement("section");
+      const titleCol = document.createElement("h2");
+      const contentCol = document.createElement("p");
       const editBtn = document.createElement("button");
       const deleteBtn = document.createElement("button");
 
@@ -50,12 +51,21 @@ fetch(`http://localhost:3000/users/${user_id}/notes`)
         .catch(error => console.log(error));
       });
 
-      newRow.appendChild(titleCol);
-      newRow.appendChild(contentCol);
-      newRow.appendChild(editBtn);
-      newRow.appendChild(deleteBtn);
+      newSection.appendChild(titleCol);
+      newSection.appendChild(contentCol);
+      newSection.appendChild(editBtn);
+      newSection.appendChild(deleteBtn);
 
-      noteTableBody.appendChild(newRow);
+      Card.appendChild(newSection);
     });
   })
   .catch(error => console.log(error));
+
+const logoutButton = document.getElementById('logout_btn');
+logoutButton.addEventListener('click', function() {
+  // Clear the session ID by setting it to null or deleting it from storage
+  sessionStorage.removeItem('userID');
+
+  // Redirect the user to the login page
+  window.location.href = '../login.html';
+});

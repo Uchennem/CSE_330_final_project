@@ -23,49 +23,14 @@
       "email": "wizday@gmail.com",
       "password": "wizzybaby1",
       "id": 3
-    }
-  ],
-  "notes": [
-    {
-      "title": "Tree",
-      "content": "Big Tree",
-      "userId": "1",
-      "id": 1
     },
     {
-      "title": "ADde",
-      "content": "djgcjhbecd",
-      "userId": "1",
-      "id": 2
-    },
-    {
-      "title": "gjykjesh",
-      "content": "reyvgyre",
-      "userId": "1",
-      "id": 3
-    },
-    {
-      "title": "h2xgfyeg",
-      "content": "3rfygicy3uf",
-      "userId": "1",
-      "id": 4
-    },
-    {
-      "title": "mdfvgjhg",
-      "content": "efvyig uwyevg",
-      "userId": "1",
-      "id": 5
-    },
-    {
-      "title": "kkkkk",
-      "content": "dfsfsdfsdfsdf",
-      "userId": "1",
-      "id": 6
-    },
-    {
-      "username": "uche1",
+      "userName": "simple",
+      "firstName": "Simple",
+      "lastName": "Man",
+      "email": "simple@man.com",
       "password": "123456",
-      "id": 7
+      "id": 4
     }
   ],
   "notes": [
@@ -80,6 +45,18 @@
       "content": "dsomejuyus",
       "userId": 3,
       "id": 11
+    },
+    {
+      "title": "Mr Macaroni",
+      "content": "Riding on a bicycle",
+      "userId": "4",
+      "id": 12
+    },
+    {
+      "title": "Is this the End?",
+      "content": "No it cannot be a smart notes app has been finished",
+      "userId": "4",
+      "id": 13
     }
   ],
   "posts": [],

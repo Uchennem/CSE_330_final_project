@@ -90,4 +90,13 @@ document.addEventListener("DOMContentLoaded", () => {
     };
   
     getUser();
-  });
+});
+  
+const logoutButton = document.getElementById('logout_btn');
+logoutButton.addEventListener('click', function() {
+  // Clear the session ID by setting it to null or deleting it from storage
+  sessionStorage.removeItem('userID');
+
+  // Redirect the user to the login page
+  window.location.href = "http://localhost:5500/login.html";
+});
